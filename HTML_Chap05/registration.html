@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form action="#" method="get">
+            <h1>온라인 서점 회원가입 페이지</h1>
+            <fieldset>
+                <legend>회원 기본 정보</legend>
+                <label for="userid">아이디&nbsp;:&nbsp;</label>
+                <input type="text" id="userid" placeholder="아이디 입력">
+                <br>
+                <p></p>
+                <label for="userpw">비밀번호&nbsp;:&nbsp;</label>
+                <input type="password" id="userpw" placeholder="비밀번호 입력">
+                <br>
+                <p></p>
+                <label for="userpw">이름&nbsp;:&nbsp;</label>
+                <input type="text" id="username" placeholder="이름 입력">
+            </fieldset>
+            <p></p>
+            <fieldset>
+                <legend>연락처</legend>
+                <label for="usermail">이메일&nbsp;:&nbsp;</label>
+                <input type="text" id="usermail" placeholder="email@gmail.com">
+                <br>
+                <p></p>
+                <label for="usernum">휴대전화&nbsp;:&nbsp;</label>
+                <input type="text" id="usernum" placeholder="010-****-****">
+                <br>
+                <p></p>
+
+            </fieldset>
+            <fieldset>
+                <legend>추가 정보</legend>
+                <label for="userbrith">생일&nbsp;:&nbsp;</label>
+                <input type="date" id="userbrith">
+
+                <script>
+                    document.getElementById("userbrith").value = new Date().toISOString().substring(0, 10);;
+                    document.querySelector('form').addEventListener('reset', function () {
+                        setTimeout(function () {
+                            document.getElementById("userbrith").value = new Date().toISOString().substring(0, 10);
+                        }, 0);
+                    });
+                </script>
+
+
+
+                <br>
+                <p></p>
+
+                <label for="usersex">성별&nbsp;:&nbsp;</label>
+
+                <input id="man" type="radio" name="gender" value="m">
+                <label for="man">남자</label>
+
+                <input id="woman" type="radio" name="gender" value="w">
+                <label for="woman">여자</label>
+
+                <input id="nothing" type="radio" name="gender" value="n">
+                <label for="nothing">선택하지않음</label>
+                <br>
+                <p></p>
+
+                <label for="userdep">학과&nbsp;:&nbsp;</label>
+                <select name="userdep" id="userdep">
+                    <optgroup label="성남캠퍼스">
+                        <option value="강북구">융합기계과</option>
+                        <option value="강남구">AI자동화</option>
+                        <option value="서초구">스마트기계정비</option>
+                        <option value="서초구">전기</option>
+                        <option value="서초구">IoT소프트웨어</option>
+                        <option value="서초구">반도체소재응용</option>
+                        <option value="서초구" selected>인공지능소프트웨어</option>
+                        <option value="서초구">그린반도체설계</option>
+                    </optgroup>
+                </select>
+                <br>
+                <p></p>
+
+                <label for="userfav">관심사&nbsp;:&nbsp;</label>
+                <input type="checkbox" name="userfav" id="userfav">
+                <label for="Jave">Java</label>
+                <input type="checkbox" name="userfav" id="userfav">
+                <label for="Jave">HTML</label>
+                <input type="checkbox" name="userfav" id="userfav">
+                <label for="Jave">CSS</label>
+                <input type="checkbox" name="userfav" id="userfav">
+                <label for="Jave">Javascript</label>
+                <input type="checkbox" name="userfav" id="userfav">
+                <label for="Jave">Algorithm</label>
+                <br>
+                <p></p>
+
+                <label for="userpic">본인 사진&nbsp;:&nbsp;</label>
+                <input type="file" name="userpic" id="userpic">
+            </fieldset>
+            <p></p>
+
+            <input type="reset" value="초기화">
+
+            <input type="submit" name="submit" value="회원가입" onclick="alert('회원가입이 완료되었습니다.');">
+        </form>
+    </div>
+</body>
+
+</html>
