@@ -1,0 +1,32 @@
+h1, h3 {
+    color:rgb(69, 0, 160);
+    background-color: lightskyblue;
+    
+}
+
+.center{
+    text-align: center;
+}
+
+.description {
+    color:brown;
+    font-family: "Black Han Sans", cursive;
+    
+}
+
+#degree {
+    color:red;
+    background-color: aqua;
+}
+
+p {
+    color: orange;
+}
+
+/* .a { font-size: 15px;}
+.b { font-size: 20px;}
+.c { font-size: 25px;} */
+
+.parent{
+    font-size: 30px;
+}
