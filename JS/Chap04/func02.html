@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function gugudan(i) {
+            document.write(`<h3>${i}단</h3>`)
+            for (let j = 1; j <= 9; j++) {
+                document.write(`${i} x ${j} = ${i * j}<br>`)
+            }
+        }
+        
+        gugudan(prompt("숫자를 입력해주세요."))
+    </script>
+</body>
+
+</html>
